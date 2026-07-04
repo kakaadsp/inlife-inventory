@@ -16,6 +16,10 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
+        // Percayai semua proxy (diperlukan untuk Render.com reverse proxy)
+        // Agar Laravel bisa mendeteksi HTTPS dengan benar
+        $middleware->trustProxies(at: '*');
+
         // Register named middleware aliases
         $middleware->alias([
             'role'   => RoleMiddleware::class,
@@ -27,6 +31,7 @@ return Application::configure(basePath: dirname(__DIR__))
             EnsureUserIsActive::class,
         ]);
     })
+
     ->withExceptions(function (Exceptions $exceptions) {
         // Render 403 nicely
         $exceptions->render(function (\Illuminate\Auth\Access\AuthorizationException $e, Request $request) {
