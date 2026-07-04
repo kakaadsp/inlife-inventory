@@ -118,7 +118,7 @@ Gunakan akun pra-konfigurasi berikut untuk menguji hak akses sistem (semua passw
 
 ---
 
-### Opsi B: Menggunakan Docker (Rekomendasi / Nilai Tambahan)
+### Opsi B: Menggunakan Docker
 
 Pastikan aplikasi **Docker Desktop** sudah aktif di komputer Anda.
 
