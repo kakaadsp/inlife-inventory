@@ -7,6 +7,22 @@
 [![Docker](https://img.shields.io/badge/Docker-Enabled-blue.svg?logo=docker&logoColor=white)](https://www.docker.com)
 [![Build Status](https://img.shields.io/badge/Tests-80%20Passed-emerald.svg?logo=phpunit&logoColor=white)](https://phpunit.de)
 
+---
+
+## 🌐 Live Demo
+
+> **Aplikasi sudah di-deploy dan dapat diakses secara publik:**
+>
+> 👉 **[https://telkomsel-inventory.onrender.com](https://telkomsel-inventory.onrender.com)**
+>
+> ℹ️ *Catatan: Karena menggunakan layanan hosting gratis (Render Free Tier), server mungkin perlu **30–60 detik** untuk "bangun" jika sedang tidak aktif (cold start). Harap tunggu sebentar dan refresh halaman jika tampilan awal blank.*
+
+**Infrastruktur Deployment:**
+| Komponen | Platform | Keterangan |
+| :--- | :--- | :--- |
+| **Web Server** | [Render.com](https://render.com) | Docker container (PHP 8.2 + Apache) |
+| **Database Server** | [Aiven.io](https://aiven.io) | MySQL 8.x Cloud (SSL/TLS Secured) |
+
 **TSEL Inventory** adalah prototipe aplikasi sistem manajemen inventaris kantor berbasis web modern yang dirancang khusus untuk memenuhi studi kasus **PT Telkomsel**. Sistem ini dibangun dengan fokus pada efisiensi pencatatan aset kantor, pemantauan stok real-time, transparansi peminjaman barang, serta kemudahan penyusunan laporan guna menekan risiko kehilangan aset dan duplikasi pencatatan.
 
 ---
@@ -150,6 +166,49 @@ php artisan test --no-coverage
 ## 📁 Lampiran Output Tambahan
 * **Database SQL Dump:** [database.sql](database.sql) (Struktur tabel & dummy seeder siap di-import).
 * **Dokumentasi REST API:** [API_DOCUMENTATION.md](API_DOCUMENTATION.md) (Dokumentasi lengkap untuk 18 endpoints API).
+
+---
+
+## 🔌 Dokumentasi REST API (Ringkasan)
+
+Aplikasi ini menyediakan **18 REST API endpoints** yang diamankan dengan **Laravel Sanctum Token Authentication**.
+
+### Base URL
+```
+https://telkomsel-inventory.onrender.com/api
+```
+
+### Autentikasi
+Semua endpoint (kecuali `/login`) memerlukan header berikut:
+```
+Authorization: Bearer {your_token}
+Accept: application/json
+```
+
+Dapatkan token dengan mengirim `POST` request ke `/api/login`:
+```json
+{
+    "email": "admin@telkomsel.com",
+    "password": "password"
+}
+```
+
+### Endpoint Utama
+
+| Method | Endpoint | Deskripsi | Auth |
+| :--- | :--- | :--- | :---: |
+| `POST` | `/api/login` | Login & dapatkan API token | ❌ |
+| `POST` | `/api/logout` | Invalidate token | ✅ |
+| `GET` | `/api/items` | Daftar semua barang inventaris | ✅ |
+| `POST` | `/api/items` | Tambah barang baru | ✅ |
+| `GET` | `/api/items/{id}` | Detail satu barang | ✅ |
+| `PUT` | `/api/items/{id}` | Update data barang | ✅ |
+| `DELETE` | `/api/items/{id}` | Hapus barang | ✅ |
+| `GET` | `/api/categories` | Daftar semua kategori | ✅ |
+| `GET` | `/api/borrowings` | Daftar semua transaksi peminjaman | ✅ |
+| `POST` | `/api/borrowings` | Buat transaksi peminjaman baru | ✅ |
+
+> 📄 Lihat dokumentasi lengkap seluruh 18 endpoints di file **[API_DOCUMENTATION.md](API_DOCUMENTATION.md)**
 
 ---
 

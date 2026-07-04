@@ -65,28 +65,5 @@ Route::middleware(['auth', 'active'])->group(function () {
 
 require __DIR__.'/auth.php';
 
-// ─── Temporary Setup Route (HAPUS SETELAH DEPLOY BERHASIL) ────────────────────
-use Illuminate\Support\Facades\Artisan;
 
-Route::get('/setup-magang', function () {
-    try {
-        Artisan::call('migrate:fresh', [
-            '--seed'  => true,
-            '--force' => true,
-        ]);
-        $migrateOutput = Artisan::output();
-
-        Artisan::call('storage:link');
-        $storageOutput = Artisan::output();
-
-        return response('<pre>'
-            . "✅ BOOM! Setup Database dan Storage Berhasil 100%!\n\n"
-            . "=== Output Migrate ===\n" . $migrateOutput . "\n"
-            . "=== Output Storage Link ===\n" . $storageOutput . "\n"
-            . "\nSilakan buka halaman login: <a href=\"/login\">/login</a>"
-            . '</pre>');
-    } catch (\Exception $e) {
-        return response('<pre>❌ Error: ' . $e->getMessage() . '</pre>', 500);
-    }
-});
 
