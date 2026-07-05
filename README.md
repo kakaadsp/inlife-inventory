@@ -78,9 +78,9 @@ Gunakan akun pra-konfigurasi berikut untuk menguji hak akses sistem (semua passw
 
 | Role | Email | Hak Akses |
 | :--- | :--- | :--- |
-| **Admin** | `admin@inlife.com` | Akses Penuh (CRUD Barang, Kategori, User, Transaksi, Laporan PDF/Excel) |
-| **Staff** | `staff@inlife.com` | CRUD Barang, CRUD Kategori, Transaksi Peminjaman & Pengembalian |
-| **Manager** | `manager@inlife.com` | Read-only Dashboard, Cetak PDF, Unduh Excel |
+| **Admin** | `admin@inlife.co.id` | Akses Penuh (CRUD Barang, Kategori, User, Transaksi, Laporan PDF/Excel) |
+| **Staff** | `staff@inlife.co.id` | CRUD Barang, CRUD Kategori, Transaksi Peminjaman & Pengembalian |
+| **Manager** | `manager@inlife.co.id` | Read-only Dashboard, Cetak PDF, Unduh Excel |
 
 ---
 
@@ -188,7 +188,7 @@ Accept: application/json
 Dapatkan token dengan mengirim `POST` request ke `/api/login`:
 ```json
 {
-    "email": "admin@inlife.com",
+    "email": "admin@inlife.co.id",
     "password": "password"
 }
 ```
