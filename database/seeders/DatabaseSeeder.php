@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 declare(strict_types=1);
 
@@ -13,7 +13,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        $this->command->info('🚀 Seeding TSEL Inventory Database...');
+        $this->command->info('🚀 Seeding Inlife Inventory Database...');
         $this->command->newLine();
 
         $this->call([

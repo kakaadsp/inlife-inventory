@@ -1,4 +1,4 @@
-version: '3.8'
+﻿version: '3.8'
 
 services:
   # Laravel App Service
@@ -6,7 +6,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: tsel-inventory-app
+    container_name: INV-inventory-app
     restart: unless-stopped
     ports:
       - "8000:80"
@@ -16,7 +16,7 @@ services:
       DB_CONNECTION: mysql
       DB_HOST: db
       DB_PORT: 3306
-      DB_DATABASE: tsel_inventory
+      DB_DATABASE: INV_inventory
       DB_USERNAME: root
       DB_PASSWORD: kakasql10
     depends_on:
@@ -25,12 +25,12 @@ services:
   # MySQL Database Service
   db:
     image: mysql:8.0
-    container_name: tsel-inventory-db
+    container_name: INV-inventory-db
     restart: unless-stopped
     ports:
       - "3306:3306"
     environment:
-      MYSQL_DATABASE: tsel_inventory
+      MYSQL_DATABASE: INV_inventory
       MYSQL_ROOT_PASSWORD: kakasql10
     volumes:
       - mysql-db-data:/var/lib/mysql

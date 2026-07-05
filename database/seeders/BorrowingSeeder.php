@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 declare(strict_types=1);
 
@@ -19,14 +19,14 @@ class BorrowingSeeder extends Seeder
         $staff2  = User::where('email', 'staff2@inlife.co.id')->first();
         $manager = User::where('email', 'manager@inlife.co.id')->first();
 
-        $laptop    = Item::where('code', 'TSEL-ELK-0001')->first();
-        $monitor   = Item::where('code', 'TSEL-ELK-0002')->first();
-        $proyektor = Item::where('code', 'TSEL-ELK-0004')->first();
-        $webcam    = Item::where('code', 'TSEL-ELK-0008')->first();
-        $kursi     = Item::where('code', 'TSEL-FRN-0001')->first();
-        $meja      = Item::where('code', 'TSEL-FRN-0002')->first();
-        $headset   = Item::where('code', 'TSEL-KMN-0002')->first();
-        $kamera    = Item::where('code', 'TSEL-LIN-0001')->first();
+        $laptop    = Item::where('code', 'INV-ELK-0001')->first();
+        $monitor   = Item::where('code', 'INV-ELK-0002')->first();
+        $proyektor = Item::where('code', 'INV-ELK-0004')->first();
+        $webcam    = Item::where('code', 'INV-ELK-0008')->first();
+        $kursi     = Item::where('code', 'INV-FRN-0001')->first();
+        $meja      = Item::where('code', 'INV-FRN-0002')->first();
+        $headset   = Item::where('code', 'INV-KMN-0002')->first();
+        $kamera    = Item::where('code', 'INV-LIN-0001')->first();
 
         $borrowings = [
             // ─── Active borrowings ─────────────────────────────────────────────────

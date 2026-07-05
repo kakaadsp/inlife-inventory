@@ -1,4 +1,4 @@
-﻿-- TSEL Inventory Database Dump
+﻿-- Inlife Inventory Database Dump
 -- Generated at: 2026-07-03 20:19:08
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -149,7 +149,7 @@ CREATE TABLE `items` (
   `category_id` bigint unsigned NOT NULL,
   `created_by` bigint unsigned NOT NULL,
   `updated_by` bigint unsigned DEFAULT NULL,
-  `code` varchar(30) NOT NULL COMMENT 'TSEL-{CAT_CODE}-{0001}',
+  `code` varchar(30) NOT NULL COMMENT 'INV-{CAT_CODE}-{0001}',
   `name` varchar(200) NOT NULL,
   `description` text,
   `stock` int unsigned NOT NULL DEFAULT '0',
@@ -175,26 +175,26 @@ CREATE TABLE `items` (
 
 -- Dumping data for table `items`
 LOCK TABLES `items` WRITE;
-INSERT INTO `items` VALUES ('1', '1', '1', NULL, 'TSEL-ELK-0001', 'Laptop Lenovo ThinkPad X1 Carbon', NULL, '8', '3', 'Gudang A - Rak 1', 'good', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
-('2', '1', '1', NULL, 'TSEL-ELK-0002', 'Monitor LG UltraWide 34 inch', NULL, '5', '2', 'Gudang A - Rak 1', 'good', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
-('3', '1', '1', NULL, 'TSEL-ELK-0003', 'Printer Canon PIXMA G2020', NULL, '3', '2', 'Gudang A - Rak 2', 'good', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
-('4', '1', '1', NULL, 'TSEL-ELK-0004', 'Proyektor Epson EB-X51', NULL, '2', '1', 'Gudang A - Rak 2', 'fair', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
-('5', '1', '2', NULL, 'TSEL-ELK-0005', 'UPS APC Smart 1500VA', NULL, '4', '2', 'Gudang B - Rak 1', 'good', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
-('6', '1', '2', NULL, 'TSEL-ELK-0006', 'Mouse Wireless Logitech MX Master', NULL, '2', '5', 'Gudang B - Rak 2', 'good', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
-('7', '1', '2', NULL, 'TSEL-ELK-0007', 'Keyboard Mechanical Keychron K2', NULL, '1', '3', 'Gudang B - Rak 2', 'good', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
-('8', '1', '2', NULL, 'TSEL-ELK-0008', 'Webcam Logitech C920 HD Pro', NULL, '6', '2', 'Gudang B - Rak 3', 'good', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
-('9', '2', '1', NULL, 'TSEL-PKN-0001', 'Stapler Besar Kangaro HD-23', NULL, '10', '3', 'Gudang C - Rak 1', 'good', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
-('10', '2', '1', NULL, 'TSEL-PKN-0002', 'Penghancur Kertas Fujika FJ-888', NULL, '3', '2', 'Gudang C - Rak 1', 'fair', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
-('11', '2', '2', NULL, 'TSEL-PKN-0003', 'Whiteboard 120x180 cm', NULL, '4', '2', 'Gudang C - Rak 2', 'good', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
-('12', '2', '2', NULL, 'TSEL-PKN-0004', 'Extension Kabel 5 Meter 6 Lubang', NULL, '1', '4', 'Gudang C - Rak 2', 'damaged', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
-('13', '3', '1', NULL, 'TSEL-FRN-0001', 'Kursi Ergonomis Herman Miller', NULL, '5', '2', 'Gudang D - Bagian 1', 'good', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
-('14', '3', '1', NULL, 'TSEL-FRN-0002', 'Meja Rapat Oval 8 Orang', NULL, '2', '1', 'Gudang D - Bagian 1', 'good', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
-('15', '3', '2', NULL, 'TSEL-FRN-0003', 'Lemari Arsip 4 Laci', NULL, '3', '1', 'Gudang D - Bagian 2', 'fair', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
-('16', '4', '1', NULL, 'TSEL-KMN-0001', 'Telephone IP Cisco 7945G', NULL, '7', '3', 'Gudang E - Rak 1', 'good', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
-('17', '4', '1', NULL, 'TSEL-KMN-0002', 'Headset Plantronics CS540', NULL, '4', '3', 'Gudang E - Rak 1', 'good', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
-('18', '4', '2', NULL, 'TSEL-KMN-0003', 'Router WiFi TP-Link Archer AX50', NULL, '3', '1', 'Gudang E - Rak 2', 'good', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
-('19', '5', '1', NULL, 'TSEL-LIN-0001', 'Kamera Mirrorless Sony A6400', NULL, '2', '1', 'Brankas Utama', 'good', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
-('20', '5', '1', NULL, 'TSEL-LIN-0002', 'Tripod Manfrotto MT190', NULL, '1', '1', 'Brankas Utama', 'fair', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL);
+INSERT INTO `items` VALUES ('1', '1', '1', NULL, 'INV-ELK-0001', 'Laptop Lenovo ThinkPad X1 Carbon', NULL, '8', '3', 'Gudang A - Rak 1', 'good', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
+('2', '1', '1', NULL, 'INV-ELK-0002', 'Monitor LG UltraWide 34 inch', NULL, '5', '2', 'Gudang A - Rak 1', 'good', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
+('3', '1', '1', NULL, 'INV-ELK-0003', 'Printer Canon PIXMA G2020', NULL, '3', '2', 'Gudang A - Rak 2', 'good', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
+('4', '1', '1', NULL, 'INV-ELK-0004', 'Proyektor Epson EB-X51', NULL, '2', '1', 'Gudang A - Rak 2', 'fair', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
+('5', '1', '2', NULL, 'INV-ELK-0005', 'UPS APC Smart 1500VA', NULL, '4', '2', 'Gudang B - Rak 1', 'good', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
+('6', '1', '2', NULL, 'INV-ELK-0006', 'Mouse Wireless Logitech MX Master', NULL, '2', '5', 'Gudang B - Rak 2', 'good', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
+('7', '1', '2', NULL, 'INV-ELK-0007', 'Keyboard Mechanical Keychron K2', NULL, '1', '3', 'Gudang B - Rak 2', 'good', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
+('8', '1', '2', NULL, 'INV-ELK-0008', 'Webcam Logitech C920 HD Pro', NULL, '6', '2', 'Gudang B - Rak 3', 'good', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
+('9', '2', '1', NULL, 'INV-PKN-0001', 'Stapler Besar Kangaro HD-23', NULL, '10', '3', 'Gudang C - Rak 1', 'good', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
+('10', '2', '1', NULL, 'INV-PKN-0002', 'Penghancur Kertas Fujika FJ-888', NULL, '3', '2', 'Gudang C - Rak 1', 'fair', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
+('11', '2', '2', NULL, 'INV-PKN-0003', 'Whiteboard 120x180 cm', NULL, '4', '2', 'Gudang C - Rak 2', 'good', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
+('12', '2', '2', NULL, 'INV-PKN-0004', 'Extension Kabel 5 Meter 6 Lubang', NULL, '1', '4', 'Gudang C - Rak 2', 'damaged', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
+('13', '3', '1', NULL, 'INV-FRN-0001', 'Kursi Ergonomis Herman Miller', NULL, '5', '2', 'Gudang D - Bagian 1', 'good', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
+('14', '3', '1', NULL, 'INV-FRN-0002', 'Meja Rapat Oval 8 Orang', NULL, '2', '1', 'Gudang D - Bagian 1', 'good', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
+('15', '3', '2', NULL, 'INV-FRN-0003', 'Lemari Arsip 4 Laci', NULL, '3', '1', 'Gudang D - Bagian 2', 'fair', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
+('16', '4', '1', NULL, 'INV-KMN-0001', 'Telephone IP Cisco 7945G', NULL, '7', '3', 'Gudang E - Rak 1', 'good', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
+('17', '4', '1', NULL, 'INV-KMN-0002', 'Headset Plantronics CS540', NULL, '4', '3', 'Gudang E - Rak 1', 'good', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
+('18', '4', '2', NULL, 'INV-KMN-0003', 'Router WiFi TP-Link Archer AX50', NULL, '3', '1', 'Gudang E - Rak 2', 'good', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
+('19', '5', '1', NULL, 'INV-LIN-0001', 'Kamera Mirrorless Sony A6400', NULL, '2', '1', 'Brankas Utama', 'good', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
+('20', '5', '1', NULL, 'INV-LIN-0002', 'Tripod Manfrotto MT190', NULL, '1', '1', 'Brankas Utama', 'fair', NULL, NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL);
 UNLOCK TABLES;
 
 -- ------------------------------------------------------
@@ -327,7 +327,7 @@ CREATE TABLE `settings` (
 
 -- Dumping data for table `settings`
 LOCK TABLES `settings` WRITE;
-INSERT INTO `settings` VALUES ('1', 'app_name', 'TSEL Inventory', 'Nama aplikasi yang ditampilkan di sistem', '2026-07-03 07:23:11', '2026-07-03 07:23:11'),
+INSERT INTO `settings` VALUES ('1', 'app_name', 'Inlife Inventory', 'Nama aplikasi yang ditampilkan di sistem', '2026-07-03 07:23:11', '2026-07-03 07:23:11'),
 ('2', 'company_name', 'Inlife', 'Nama perusahaan', '2026-07-03 07:23:11', '2026-07-03 07:23:11'),
 ('3', 'app_version', '1.0.0', 'Versi aplikasi saat ini', '2026-07-03 07:23:11', '2026-07-03 07:23:11'),
 ('4', 'low_stock_threshold', '5', 'Batas minimum stok sebelum alert ditampilkan', '2026-07-03 07:23:11', '2026-07-03 07:23:11'),

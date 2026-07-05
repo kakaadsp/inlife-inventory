@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 declare(strict_types=1);
 
@@ -12,7 +12,7 @@ class SettingSeeder extends Seeder
     public function run(): void
     {
         $settings = [
-            ['key' => 'app_name',            'value' => 'TSEL Inventory',     'description' => 'Nama aplikasi yang ditampilkan di sistem'],
+            ['key' => 'app_name',            'value' => 'Inlife Inventory',     'description' => 'Nama aplikasi yang ditampilkan di sistem'],
             ['key' => 'company_name',         'value' => 'Inlife',            'description' => 'Nama perusahaan'],
             ['key' => 'app_version',          'value' => '1.0.0',              'description' => 'Versi aplikasi saat ini'],
             ['key' => 'low_stock_threshold',  'value' => '5',                  'description' => 'Batas minimum stok sebelum alert ditampilkan'],

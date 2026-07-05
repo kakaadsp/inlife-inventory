@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -13,7 +13,7 @@ return new class extends Migration
             $table->foreignId('category_id')->constrained('categories')->restrictOnDelete();
             $table->foreignId('created_by')->constrained('users')->restrictOnDelete();
             $table->foreignId('updated_by')->nullable()->constrained('users')->nullOnDelete();
-            $table->string('code', 30)->unique()->comment('TSEL-{CAT_CODE}-{0001}');
+            $table->string('code', 30)->unique()->comment('INV-{CAT_CODE}-{0001}');
             $table->string('name', 200);
             $table->text('description')->nullable();
             $table->unsignedInteger('stock')->default(0);

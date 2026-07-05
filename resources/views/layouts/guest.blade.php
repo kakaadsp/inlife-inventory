@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="description" content="Inlife Inventory — Sistem Manajemen Inventaris">
 
-    <title>{{ config('app.name', 'TSEL Inventory') }} — Login</title>
+    <title>{{ config('app.name', 'Inlife Inventory') }} — Login</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,7 +42,7 @@
                     </svg>
                 </div>
 
-                <h1 class="text-4xl font-bold text-white mb-2">TSEL Inventory</h1>
+                <h1 class="text-4xl font-bold text-white mb-2">Inlife Inventory</h1>
                 <p class="text-brand-200 text-lg mb-10">Inlife</p>
 
                 <div class="space-y-4 text-left max-w-xs mx-auto">
@@ -96,7 +96,7 @@
                         </svg>
                     </div>
                     <div>
-                        <p class="font-bold text-slate-900">TSEL Inventory</p>
+                        <p class="font-bold text-slate-900">Inlife Inventory</p>
                         <p class="text-xs text-slate-500">Inlife</p>
                     </div>
                 </div>

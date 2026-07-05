@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laporan Peminjaman — TSEL Inventory</title>
+    <title>Laporan Peminjaman — Inlife Inventory</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'DejaVu Sans', 'Arial', sans-serif; font-size: 10px; color: #1e293b; line-height: 1.4; }
@@ -44,7 +44,7 @@
     {{-- Header --}}
     <div class="header">
         <div>
-            <div class="header-logo">TSEL Inventory</div>
+            <div class="header-logo">Inlife Inventory</div>
             <div class="header-sub">Inlife — Sistem Manajemen Inventaris</div>
         </div>
         <div class="header-info">

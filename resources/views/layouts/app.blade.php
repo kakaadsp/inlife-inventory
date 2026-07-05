@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" x-data="appLayout()" :class="{ 'dark': isDark }">
 <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="description" content="Inlife Inventory — Sistem Manajemen Inventaris">
 
-    <title>@yield('title', 'Dashboard') — TSEL Inventory</title>
+    <title>@yield('title', 'Dashboard') — Inlife Inventory</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +34,7 @@
                 </svg>
             </div>
             <div class="min-w-0">
-                <p class="text-sm font-bold text-slate-900 dark:text-white leading-tight truncate">TSEL Inventory</p>
+                <p class="text-sm font-bold text-slate-900 dark:text-white leading-tight truncate">Inlife Inventory</p>
                 <p class="text-xs text-slate-500 dark:text-slate-400 leading-tight">Inlife</p>
             </div>
         </div>
