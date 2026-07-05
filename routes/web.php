@@ -65,5 +65,18 @@ Route::middleware(['auth', 'active'])->group(function () {
 
 require __DIR__.'/auth.php';
 
-
-
+// ─── Setup Route (TEMPORARY - DELETE AFTER USE) ────────────────────────────
+Route::get('/setup-magang', function () {
+    try {
+        \Illuminate\Support\Facades\Artisan::call('migrate', ['--force' => true]);
+        \Illuminate\Support\Facades\Artisan::call('db:seed', ['--force' => true]);
+        \Illuminate\Support\Facades\Artisan::call('storage:link', ['--force' => true]);
+        return response('BOOM! Setup Database dan Storage Berhasil 100%! '
+            . '<br><br>Silakan login dengan:<br>'
+            . 'Admin: admin@inlife.co.id / password<br>'
+            . 'Staff: staff@inlife.co.id / password<br>'
+            . 'Manager: manager@inlife.co.id / password', 200);
+    } catch (\Exception $e) {
+        return response('ERROR: ' . $e->getMessage(), 500);
+    }
+});
