@@ -1,4 +1,4 @@
-﻿-- Inlife Inventory Database Dump
+-- Inlife Inventory Database Dump
 -- Generated at: 2026-07-03 20:19:08
 
 SET FOREIGN_KEY_CHECKS=0;
