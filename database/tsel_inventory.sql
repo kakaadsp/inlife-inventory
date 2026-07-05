@@ -1,4 +1,4 @@
--- TSEL Inventory Database Dump
+﻿-- TSEL Inventory Database Dump
 -- Generated at: 2026-07-03 20:19:08
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -328,7 +328,7 @@ CREATE TABLE `settings` (
 -- Dumping data for table `settings`
 LOCK TABLES `settings` WRITE;
 INSERT INTO `settings` VALUES ('1', 'app_name', 'TSEL Inventory', 'Nama aplikasi yang ditampilkan di sistem', '2026-07-03 07:23:11', '2026-07-03 07:23:11'),
-('2', 'company_name', 'PT Telkomsel', 'Nama perusahaan', '2026-07-03 07:23:11', '2026-07-03 07:23:11'),
+('2', 'company_name', 'Inlife', 'Nama perusahaan', '2026-07-03 07:23:11', '2026-07-03 07:23:11'),
 ('3', 'app_version', '1.0.0', 'Versi aplikasi saat ini', '2026-07-03 07:23:11', '2026-07-03 07:23:11'),
 ('4', 'low_stock_threshold', '5', 'Batas minimum stok sebelum alert ditampilkan', '2026-07-03 07:23:11', '2026-07-03 07:23:11'),
 ('5', 'items_per_page', '15', 'Jumlah data per halaman pada tabel', '2026-07-03 07:23:11', '2026-07-03 07:23:11');
@@ -361,10 +361,10 @@ CREATE TABLE `users` (
 
 -- Dumping data for table `users`
 LOCK TABLES `users` WRITE;
-INSERT INTO `users` VALUES ('1', '1', 'Administrator Telkomsel', 'admin@telkomsel.com', NULL, '$2y$12$5e06BCHdi13qYUfzigCo7OFKKrCnUfaLCO6V1G65/gj1Q98Lkl60m', NULL, '081234567890', '1', NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
-('2', '2', 'Budi Santoso', 'staff@telkomsel.com', NULL, '$2y$12$D/GZPC0NFHAHU6fEVHLKvuXgwLrti.xMWGNVTu5d/ffCJ0HiPb0q.', NULL, '081298765432', '1', NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
-('3', '2', 'Sari Dewi', 'staff2@telkomsel.com', NULL, '$2y$12$emdSgauWdjsGA2IvRJKOHeQfXuagQreNJHZZqIx8dFmE0t3D7cD.C', NULL, '082112345678', '1', NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
-('4', '3', 'Andi Wijaya', 'manager@telkomsel.com', NULL, '$2y$12$IKbYquf5AhbPIMCiy/SgQOZmfKYLIZIskhSLf7x7oFwdeAQOTGjVW', NULL, '081356789012', '1', NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL);
+INSERT INTO `users` VALUES ('1', '1', 'Administrator Inlife', 'admin@inlife.co.id', NULL, '$2y$12$5e06BCHdi13qYUfzigCo7OFKKrCnUfaLCO6V1G65/gj1Q98Lkl60m', NULL, '081234567890', '1', NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
+('2', '2', 'Budi Santoso', 'staff@inlife.co.id', NULL, '$2y$12$D/GZPC0NFHAHU6fEVHLKvuXgwLrti.xMWGNVTu5d/ffCJ0HiPb0q.', NULL, '081298765432', '1', NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
+('3', '2', 'Sari Dewi', 'staff2@inlife.co.id', NULL, '$2y$12$emdSgauWdjsGA2IvRJKOHeQfXuagQreNJHZZqIx8dFmE0t3D7cD.C', NULL, '082112345678', '1', NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL),
+('4', '3', 'Andi Wijaya', 'manager@inlife.co.id', NULL, '$2y$12$IKbYquf5AhbPIMCiy/SgQOZmfKYLIZIskhSLf7x7oFwdeAQOTGjVW', NULL, '081356789012', '1', NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11', NULL);
 UNLOCK TABLES;
 
 SET FOREIGN_KEY_CHECKS=1;

@@ -60,7 +60,7 @@
                         <label class="form-label" for="borrower_email">Email</label>
                         <input type="email" id="borrower_email" name="borrower_email" value="{{ old('borrower_email') }}"
                                class="form-input @error('borrower_email') border-red-400 @enderror"
-                               placeholder="nama@telkomsel.co.id">
+                               placeholder="nama@inlife.co.id">
                         @error('borrower_email') <p class="form-error">{{ $message }}</p> @enderror
                     </div>
 

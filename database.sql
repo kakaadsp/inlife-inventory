@@ -1,4 +1,4 @@
--- TSEL Inventory Database Dump
+﻿-- TSEL Inventory Database Dump
 -- Generated: 2026-07-04 16:33:02
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -76,7 +76,7 @@ INSERT INTO `borrowings` (`id`, `created_by`, `returned_by`, `borrowing_code`, `
 ('3', '2', NULL, 'BRW-20260618-0001', 'Ahmad Fauzi', 'Divisi IT', '083456700001', NULL, '2026-06-18', '2026-07-05', NULL, 'overdue', NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11'),
 ('4', '2', '2', 'BRW-20260520-0001', 'Dewi Lestari', 'Divisi Finance', '084567800001', NULL, '2026-05-20', '2026-06-01', '2026-06-01', 'returned', NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11'),
 ('5', '3', '3', 'BRW-20260525-0001', 'Hendra Kusuma', 'Divisi Operations', '085678900001', NULL, '2026-05-25', '2026-06-05', '2026-06-03', 'returned', NULL, '2026-07-03 07:23:11', '2026-07-03 07:23:11'),
-('6', '1', NULL, 'BRW-20260704-0001', 'Kaka Dimas Soehendra Putra', 'IT Division', '085732101644', 'kaka@telkomsel.com', '2026-07-04', '2026-07-13', NULL, 'borrowed', '- Jangan dibanting', '2026-07-04 16:12:45', '2026-07-04 16:12:45');
+('6', '1', NULL, 'BRW-20260704-0001', 'Kaka Dimas Soehendra Putra', 'IT Division', '085732101644', 'kaka@inlife.co.id', '2026-07-04', '2026-07-13', NULL, 'borrowed', '- Jangan dibanting', '2026-07-04 16:12:45', '2026-07-04 16:12:45');
 
 -- ------------------------------------------------------
 -- Table structure for table `cache`
@@ -353,7 +353,7 @@ CREATE TABLE `settings` (
 -- Dumping data for table `settings`
 INSERT INTO `settings` (`id`, `key`, `value`, `description`, `created_at`, `updated_at`) VALUES
 ('1', 'app_name', 'TSEL Inventory', 'Nama aplikasi yang ditampilkan di sistem', '2026-07-03 07:23:11', '2026-07-03 07:23:11'),
-('2', 'company_name', 'PT Telkomsel', 'Nama perusahaan', '2026-07-03 07:23:11', '2026-07-03 07:23:11'),
+('2', 'company_name', 'Inlife', 'Nama perusahaan', '2026-07-03 07:23:11', '2026-07-03 07:23:11'),
 ('3', 'app_version', '1.0.0', 'Versi aplikasi saat ini', '2026-07-03 07:23:11', '2026-07-03 07:23:11'),
 ('4', 'low_stock_threshold', '5', 'Batas minimum stok sebelum alert ditampilkan', '2026-07-03 07:23:11', '2026-07-03 07:23:11'),
 ('5', 'items_per_page', '15', 'Jumlah data per halaman pada tabel', '2026-07-03 07:23:11', '2026-07-03 07:23:11');
@@ -385,9 +385,9 @@ CREATE TABLE `users` (
 
 -- Dumping data for table `users`
 INSERT INTO `users` (`id`, `role_id`, `name`, `email`, `email_verified_at`, `password`, `avatar`, `phone`, `is_active`, `remember_token`, `created_at`, `updated_at`, `deleted_at`) VALUES
-('1', '1', 'Administrator Telkomsel', 'admin@telkomsel.com', NULL, '$2y$12$CbR4NF2E57tSo5mKJp04G.33ZDwTDjNkULpGFuu7HkpyTlyk9DUj2', NULL, '081234567890', '1', NULL, '2026-07-03 07:23:11', '2026-07-04 12:47:47', NULL),
-('2', '2', 'Budi Santoso', 'staff@telkomsel.com', NULL, '$2y$12$KiTKlhHtJJ.C8d6BHi4oH.m7MM5nNIsGTbd2AtwEdAyzLiLpanUWC', NULL, '081298765432', '1', NULL, '2026-07-03 07:23:11', '2026-07-04 12:47:47', NULL),
-('3', '2', 'Sari Dewi', 'staff2@telkomsel.com', NULL, '$2y$12$Jc/gywkeCZxW5xhQEEyd9.ixIyCSWkHxhUX10FQwq6lyI7ELTh9KW', NULL, '082112345678', '1', NULL, '2026-07-03 07:23:11', '2026-07-04 12:47:47', NULL),
-('4', '3', 'Andi Wijaya', 'manager@telkomsel.com', NULL, '$2y$12$maN8GPbkU/yz/JW/jcKIYeEIRp1hO4iRFXo/sqmcY82R5BAtBlHNq', NULL, '081356789012', '1', NULL, '2026-07-03 07:23:11', '2026-07-04 12:47:47', NULL);
+('1', '1', 'Administrator Inlife', 'admin@inlife.co.id', NULL, '$2y$12$CbR4NF2E57tSo5mKJp04G.33ZDwTDjNkULpGFuu7HkpyTlyk9DUj2', NULL, '081234567890', '1', NULL, '2026-07-03 07:23:11', '2026-07-04 12:47:47', NULL),
+('2', '2', 'Budi Santoso', 'staff@inlife.co.id', NULL, '$2y$12$KiTKlhHtJJ.C8d6BHi4oH.m7MM5nNIsGTbd2AtwEdAyzLiLpanUWC', NULL, '081298765432', '1', NULL, '2026-07-03 07:23:11', '2026-07-04 12:47:47', NULL),
+('3', '2', 'Sari Dewi', 'staff2@inlife.co.id', NULL, '$2y$12$Jc/gywkeCZxW5xhQEEyd9.ixIyCSWkHxhUX10FQwq6lyI7ELTh9KW', NULL, '082112345678', '1', NULL, '2026-07-03 07:23:11', '2026-07-04 12:47:47', NULL),
+('4', '3', 'Andi Wijaya', 'manager@inlife.co.id', NULL, '$2y$12$maN8GPbkU/yz/JW/jcKIYeEIRp1hO4iRFXo/sqmcY82R5BAtBlHNq', NULL, '081356789012', '1', NULL, '2026-07-03 07:23:11', '2026-07-04 12:47:47', NULL);
 
 SET FOREIGN_KEY_CHECKS=1;

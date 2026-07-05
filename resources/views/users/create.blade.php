@@ -39,7 +39,7 @@
                     <label class="form-label" for="email">Email <span class="text-red-500">*</span></label>
                     <input type="email" id="email" name="email" value="{{ old('email') }}"
                            class="form-input @error('email') border-red-400 @enderror"
-                           placeholder="nama@telkomsel.co.id">
+                           placeholder="nama@inlife.co.id">
                     @error('email') <p class="form-error">{{ $message }}</p> @enderror
                 </div>
 

@@ -20,8 +20,8 @@ class UserSeeder extends Seeder
         $users = [
             [
                 'role_id'  => $adminRole->id,
-                'name'     => 'Administrator Telkomsel',
-                'email'    => 'admin@telkomsel.com',
+                'name'     => 'Administrator Inlife',
+                'email'    => 'admin@inlife.co.id',
                 'password' => Hash::make('password'),
                 'phone'    => '081234567890',
                 'is_active' => true,
@@ -29,7 +29,7 @@ class UserSeeder extends Seeder
             [
                 'role_id'  => $staffRole->id,
                 'name'     => 'Budi Santoso',
-                'email'    => 'staff@telkomsel.com',
+                'email'    => 'staff@inlife.co.id',
                 'password' => Hash::make('password'),
                 'phone'    => '081298765432',
                 'is_active' => true,
@@ -37,7 +37,7 @@ class UserSeeder extends Seeder
             [
                 'role_id'  => $staffRole->id,
                 'name'     => 'Sari Dewi',
-                'email'    => 'staff2@telkomsel.com',
+                'email'    => 'staff2@inlife.co.id',
                 'password' => Hash::make('password'),
                 'phone'    => '082112345678',
                 'is_active' => true,
@@ -45,7 +45,7 @@ class UserSeeder extends Seeder
             [
                 'role_id'  => $managerRole->id,
                 'name'     => 'Andi Wijaya',
-                'email'    => 'manager@telkomsel.com',
+                'email'    => 'manager@inlife.co.id',
                 'password' => Hash::make('password'),
                 'phone'    => '081356789012',
                 'is_active' => true,
@@ -60,10 +60,10 @@ class UserSeeder extends Seeder
         $this->command->table(
             ['Role', 'Email', 'Password'],
             [
-                ['Admin',   'admin@telkomsel.com',   'password'],
-                ['Staff',   'staff@telkomsel.com',   'password'],
-                ['Staff 2', 'staff2@telkomsel.com',  'password'],
-                ['Manager', 'manager@telkomsel.com', 'password'],
+                ['Admin',   'admin@inlife.co.id',   'password'],
+                ['Staff',   'staff@inlife.co.id',   'password'],
+                ['Staff 2', 'staff2@inlife.co.id',  'password'],
+                ['Manager', 'manager@inlife.co.id', 'password'],
             ]
         );
     }

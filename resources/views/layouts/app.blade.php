@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="description" content="TSEL Inventory — Sistem Manajemen Inventaris PT Telkomsel">
+    <meta name="description" content="Inlife Inventory — Sistem Manajemen Inventaris">
 
     <title>@yield('title', 'Dashboard') — TSEL Inventory</title>
 
@@ -35,7 +35,7 @@
             </div>
             <div class="min-w-0">
                 <p class="text-sm font-bold text-slate-900 dark:text-white leading-tight truncate">TSEL Inventory</p>
-                <p class="text-xs text-slate-500 dark:text-slate-400 leading-tight">PT Telkomsel</p>
+                <p class="text-xs text-slate-500 dark:text-slate-400 leading-tight">Inlife</p>
             </div>
         </div>
 
@@ -348,7 +348,7 @@
         <!-- Footer -->
         <footer class="py-4 px-6 border-t border-slate-200/80 dark:border-slate-700/60">
             <p class="text-center text-xs text-slate-400 dark:text-slate-500">
-                © {{ date('Y') }} TSEL Inventory — PT Telkomsel. All rights reserved.
+                © {{ date('Y') }} Inlife Inventory. All rights reserved.
             </p>
         </footer>
     </div>

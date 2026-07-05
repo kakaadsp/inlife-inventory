@@ -500,7 +500,7 @@ class InventorySystemTest extends TestCase
             'borrower_name'        => 'John Doe',
             'borrower_department'  => 'IT Division',
             'borrower_phone'       => '08123456789',
-            'borrower_email'       => 'john@telkomsel.com',
+            'borrower_email'       => 'john@inlife.co.id',
             'borrow_date'          => now()->toDateString(),
             'expected_return_date' => now()->addDays(7)->toDateString(),
             'notes'                => 'Test borrowing',

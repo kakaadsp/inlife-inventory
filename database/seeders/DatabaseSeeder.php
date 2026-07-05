@@ -32,10 +32,10 @@ class DatabaseSeeder extends Seeder
         $this->command->table(
             ['Role', 'Email', 'Password'],
             [
-                ['Admin',   'admin@telkomsel.com',   'password'],
-                ['Staff',   'staff@telkomsel.com',   'password'],
-                ['Staff 2', 'staff2@telkomsel.com',  'password'],
-                ['Manager', 'manager@telkomsel.com', 'password'],
+                ['Admin',   'admin@inlife.co.id',   'password'],
+                ['Staff',   'staff@inlife.co.id',   'password'],
+                ['Staff 2', 'staff2@inlife.co.id',  'password'],
+                ['Manager', 'manager@inlife.co.id', 'password'],
             ]
         );
     }

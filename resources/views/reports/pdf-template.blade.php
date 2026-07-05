@@ -45,7 +45,7 @@
     <div class="header">
         <div>
             <div class="header-logo">TSEL Inventory</div>
-            <div class="header-sub">PT Telkomsel — Sistem Manajemen Inventaris</div>
+            <div class="header-sub">Inlife — Sistem Manajemen Inventaris</div>
         </div>
         <div class="header-info">
             <p><strong>Laporan Peminjaman</strong></p>
@@ -56,7 +56,7 @@
     {{-- Title --}}
     <div class="report-title">
         <h1>Laporan Data Peminjaman</h1>
-        <p>PT Telkomsel — TSEL Inventory Management System</p>
+        <p>Inlife — Inlife Inventory Management System</p>
     </div>
 
     {{-- Filter Info --}}
@@ -135,7 +135,7 @@
 
     {{-- Footer --}}
     <div class="footer">
-        <div>© {{ date('Y') }} PT Telkomsel — TSEL Inventory. Dokumen ini digenerate secara otomatis oleh sistem.</div>
+        <div>© {{ date('Y') }} Inlife — Inlife Inventory. Dokumen ini digenerate secara otomatis oleh sistem.</div>
         <div>Halaman 1</div>
     </div>
 </body>

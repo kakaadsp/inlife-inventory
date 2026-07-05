@@ -10,7 +10,7 @@
             <label class="form-label" for="email">Email</label>
             <input id="email" type="email" name="email" value="{{ old('email') }}"
                    class="form-input @error('email') border-red-400 @enderror"
-                   placeholder="nama@telkomsel.co.id"
+                   placeholder="nama@inlife.co.id"
                    required autofocus autocomplete="username">
             @error('email')
                 <p class="form-error">

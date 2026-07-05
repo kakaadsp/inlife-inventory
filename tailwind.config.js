@@ -17,7 +17,7 @@ export default {
                 sans: ['Inter', 'Outfit', ...defaultTheme.fontFamily.sans],
             },
             colors: {
-                // Telkomsel brand colors
+                // Brand colors
                 brand: {
                     50:  '#fff1f1',
                     100: '#ffe1e1',

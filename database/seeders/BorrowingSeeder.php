@@ -15,9 +15,9 @@ class BorrowingSeeder extends Seeder
 {
     public function run(): void
     {
-        $staff   = User::where('email', 'staff@telkomsel.com')->first();
-        $staff2  = User::where('email', 'staff2@telkomsel.com')->first();
-        $manager = User::where('email', 'manager@telkomsel.com')->first();
+        $staff   = User::where('email', 'staff@inlife.co.id')->first();
+        $staff2  = User::where('email', 'staff2@inlife.co.id')->first();
+        $manager = User::where('email', 'manager@inlife.co.id')->first();
 
         $laptop    = Item::where('code', 'TSEL-ELK-0001')->first();
         $monitor   = Item::where('code', 'TSEL-ELK-0002')->first();

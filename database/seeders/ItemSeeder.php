@@ -13,8 +13,8 @@ class ItemSeeder extends Seeder
 {
     public function run(): void
     {
-        $admin = User::where('email', 'admin@telkomsel.com')->first();
-        $staff = User::where('email', 'staff@telkomsel.com')->first();
+        $admin = User::where('email', 'admin@inlife.co.id')->first();
+        $staff = User::where('email', 'staff@inlife.co.id')->first();
 
         $elk = Category::where('code', 'ELK')->first();
         $pkn = Category::where('code', 'PKN')->first();

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="description" content="TSEL Inventory — Sistem Manajemen Inventaris PT Telkomsel">
+    <meta name="description" content="Inlife Inventory — Sistem Manajemen Inventaris">
 
     <title>{{ config('app.name', 'TSEL Inventory') }} — Login</title>
 
@@ -43,7 +43,7 @@
                 </div>
 
                 <h1 class="text-4xl font-bold text-white mb-2">TSEL Inventory</h1>
-                <p class="text-brand-200 text-lg mb-10">PT Telkomsel</p>
+                <p class="text-brand-200 text-lg mb-10">Inlife</p>
 
                 <div class="space-y-4 text-left max-w-xs mx-auto">
                     <div class="flex items-center gap-3 text-white/90">
@@ -81,7 +81,7 @@
                 </div>
             </div>
 
-            <p class="absolute bottom-6 text-brand-300 text-xs">© {{ date('Y') }} PT Telkomsel. All rights reserved.</p>
+            <p class="absolute bottom-6 text-brand-300 text-xs">© {{ date('Y') }} Inlife. All rights reserved.</p>
         </div>
 
         {{-- Right: Login Form --}}
@@ -97,7 +97,7 @@
                     </div>
                     <div>
                         <p class="font-bold text-slate-900">TSEL Inventory</p>
-                        <p class="text-xs text-slate-500">PT Telkomsel</p>
+                        <p class="text-xs text-slate-500">Inlife</p>
                     </div>
                 </div>
 
