@@ -68,6 +68,14 @@ require __DIR__.'/auth.php';
 // ─── Setup Route (TEMPORARY - DELETE AFTER USE) ────────────────────────────
 Route::get('/setup-magang', function () {
     try {
+        \Illuminate\Support\Facades\Schema::disableForeignKeyConstraints();
+        \App\Models\Item::truncate();
+        \App\Models\Category::truncate();
+        \App\Models\User::truncate();
+        \App\Models\Role::truncate();
+        \App\Models\Setting::truncate();
+        \Illuminate\Support\Facades\Schema::enableForeignKeyConstraints();
+
         \Illuminate\Support\Facades\Artisan::call('migrate', ['--force' => true]);
         \Illuminate\Support\Facades\Artisan::call('db:seed', ['--force' => true]);
         \Illuminate\Support\Facades\Artisan::call('storage:link', ['--force' => true]);

@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23EC2028'/><text x='6' y='22' font-family='Arial' font-size='18' font-weight='bold' fill='white'>T</text></svg>">
+    <link rel="icon" type="image/png" href="{{ asset('images/logo.png') }}">
 
     <!-- Styles & Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -28,11 +28,7 @@
 
         <!-- Logo -->
         <div class="flex items-center gap-3 px-5 py-5 border-b border-slate-200/80 dark:border-slate-700/60">
-            <div class="w-9 h-9 bg-gradient-to-br from-brand-600 to-brand-700 rounded-xl flex items-center justify-center shadow-sm flex-shrink-0">
-                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
-                </svg>
-            </div>
+            <img src="{{ asset('images/logo.png') }}" alt="Logo" class="w-9 h-9 object-contain flex-shrink-0 rounded-lg">
             <div class="min-w-0">
                 <p class="text-sm font-bold text-slate-900 dark:text-white leading-tight truncate">Inlife Inventory</p>
                 <p class="text-xs text-slate-500 dark:text-slate-400 leading-tight">Inlife</p>
