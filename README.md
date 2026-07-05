@@ -1,4 +1,4 @@
-# 🚀 TSEL Inventory — Sistem Manajemen Inventaris PT Telkomsel
+# 🚀 Inlife Inventory — Sistem Manajemen Inventaris
 
 [![Laravel 11](https://img.shields.io/badge/Laravel-11.x-red.svg?logo=laravel&logoColor=white)](https://laravel.com)
 [![PHP](https://img.shields.io/badge/PHP-8.2%2B-blue.svg?logo=php&logoColor=white)](https://php.net)
@@ -13,7 +13,7 @@
 
 > **Aplikasi sudah di-deploy dan dapat diakses secara publik:**
 >
-> 👉 **[https://telkomsel-inventory.onrender.com](https://telkomsel-inventory.onrender.com)**
+> 👉 **[https://inlife-inventory.onrender.com](https://inlife-inventory.onrender.com)**
 >
 > ℹ️ *Catatan: Karena menggunakan layanan hosting gratis (Render Free Tier), server mungkin perlu **30–60 detik** untuk "bangun" jika sedang tidak aktif (cold start). Harap tunggu sebentar dan refresh halaman jika tampilan awal blank.*
 
@@ -23,13 +23,13 @@
 | **Web Server** | [Render.com](https://render.com) | Docker container (PHP 8.2 + Apache) |
 | **Database Server** | [Aiven.io](https://aiven.io) | MySQL 8.x Cloud (SSL/TLS Secured) |
 
-**TSEL Inventory** adalah prototipe aplikasi sistem manajemen inventaris kantor berbasis web modern yang dirancang khusus untuk memenuhi studi kasus **PT Telkomsel**. Sistem ini dibangun dengan fokus pada efisiensi pencatatan aset kantor, pemantauan stok real-time, transparansi peminjaman barang, serta kemudahan penyusunan laporan guna menekan risiko kehilangan aset dan duplikasi pencatatan.
+**Inlife Inventory** adalah prototipe aplikasi sistem manajemen inventaris kantor berbasis web modern yang dirancang untuk memenuhi studi kasus pengelolaan aset perusahaan. Sistem ini dibangun dengan fokus pada efisiensi pencatatan aset kantor, pemantauan stok real-time, transparansi peminjaman barang, serta kemudahan penyusunan laporan guna menekan risiko kehilangan aset dan duplikasi pencatatan.
 
 ---
 
 ## 🎨 Desain & UI/UX Premium
 Aplikasi ini dikembangkan dengan prinsip **Motion Design Modern** untuk memberikan pengalaman pengguna (*User Experience*) terbaik:
-* **Tema Visual Khas:** Menggunakan palet warna merah utama (*Telkomsel Red*) dipadukan dengan aksen jingga sekunder (*Telkomsel Orange*) yang disesuaikan secara visual untuk identitas korporat PT Telkomsel.
+* **Tema Visual Khas:** Menggunakan palet warna merah utama dipadukan dengan aksen jingga sekunder yang disesuaikan secara visual untuk identitas korporat.
 * **Responsive Dark Mode:** Transisi mode gelap/terang secara halus dengan *state retention* menggunakan LocalStorage.
 * **Premium Empty States:** Setiap halaman tanpa data (akibat pencarian kosong atau ketiadaan entri) dilengkapi dengan ilustrasi SVG premium, deskripsi kontekstual, icon interaktif, serta Call-to-Action (CTA) dinamis untuk menambah data atau menyegarkan pencarian.
 * **Micro-Animations & Easing:** Animasi kemunculan konten (*fade-in*, *slide-up*) snappy dengan durasi natural maksimal 300ms untuk kenyamanan visual yang elegan tanpa mengganggu operasional sistem.
@@ -78,9 +78,9 @@ Gunakan akun pra-konfigurasi berikut untuk menguji hak akses sistem (semua passw
 
 | Role | Email | Hak Akses |
 | :--- | :--- | :--- |
-| **Admin** | `admin@telkomsel.com` | Akses Penuh (CRUD Barang, Kategori, User, Transaksi, Laporan PDF/Excel) |
-| **Staff** | `staff@telkomsel.com` | CRUD Barang, CRUD Kategori, Transaksi Peminjaman & Pengembalian |
-| **Manager** | `manager@telkomsel.com` | Read-only Dashboard, Cetak PDF, Unduh Excel |
+| **Admin** | `admin@inlife.com` | Akses Penuh (CRUD Barang, Kategori, User, Transaksi, Laporan PDF/Excel) |
+| **Staff** | `staff@inlife.com` | CRUD Barang, CRUD Kategori, Transaksi Peminjaman & Pengembalian |
+| **Manager** | `manager@inlife.com` | Read-only Dashboard, Cetak PDF, Unduh Excel |
 
 ---
 
@@ -97,8 +97,8 @@ Gunakan akun pra-konfigurasi berikut untuk menguji hak akses sistem (semua passw
 #### Langkah-langkah
 1. **Clone repositori:**
    ```bash
-   git clone https://github.com/kakaadsp/telkomsel-inventory.git
-   cd telkomsel-inventory
+   git clone https://github.com/kakaadsp/inlife-inventory.git
+   cd inlife-inventory
    ```
 2. **Instal dependensi Composer & NPM:**
    ```bash
@@ -175,7 +175,7 @@ Aplikasi ini menyediakan **18 REST API endpoints** yang diamankan dengan **Larav
 
 ### Base URL
 ```
-https://telkomsel-inventory.onrender.com/api
+https://inlife-inventory.onrender.com/api
 ```
 
 ### Autentikasi
@@ -188,7 +188,7 @@ Accept: application/json
 Dapatkan token dengan mengirim `POST` request ke `/api/login`:
 ```json
 {
-    "email": "admin@telkomsel.com",
+    "email": "admin@inlife.com",
     "password": "password"
 }
 ```
