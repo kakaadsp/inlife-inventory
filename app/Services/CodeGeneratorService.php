@@ -10,17 +10,18 @@ use App\Models\Item;
 class CodeGeneratorService
 {
     /**
-     * Generate a unique item code in format: TSEL-{CAT_CODE}-{SEQUENCE}
-     * Example: TSEL-ELK-0001
+     * Generate a unique item code in format: INV-{CAT_CODE}-{SEQUENCE}
+     * Example: INV-ELK-0001
      */
-    public function generateItemCode(int $categoryId): string
+    public function generateItemCode(int|string $categoryId): string
     {
+        $categoryId = (int) $categoryId;
         $category = Category::findOrFail($categoryId);
 
         // Get the highest sequence number for this category
         $lastItem = Item::withTrashed()
             ->where('category_id', $categoryId)
-            ->where('code', 'like', "TSEL-{$category->code}-%")
+            ->where('code', 'like', "INV-{$category->code}-%")
             ->orderByDesc('id')
             ->first();
 
@@ -30,7 +31,7 @@ class CodeGeneratorService
             $sequence = (int) end($parts) + 1;
         }
 
-        return sprintf('TSEL-%s-%04d', $category->code, $sequence);
+        return sprintf('INV-%s-%04d', $category->code, $sequence);
     }
 
     /**
